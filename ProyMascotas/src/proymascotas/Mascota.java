@@ -53,8 +53,12 @@ public class Mascota {
      
     
     public boolean estagordo( ){
-        if (this.energia > this.energiaIdeal*1.3);
-        return true;
-    }
+        Boolean esta_gordo; 
+        esta_gordo = false;
+        if (this.energia > this.energiaIdeal*1.3){
+            esta_gordo = true;
+            }
+        return esta_gordo;
+    } // fin estagordo()
 
 }
