@@ -60,5 +60,12 @@ public class Mascota {
             }
         return esta_gordo;
     } // fin estagordo()
+    
+    /*
+    Tambien se pudo haber escrito
+    public boolean estagordo(){
+        return (this.energia > this.energiaIdeal * 1.3);
+        }
+    */
 
 }
