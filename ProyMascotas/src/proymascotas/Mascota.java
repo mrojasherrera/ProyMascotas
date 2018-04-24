@@ -1,9 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package proymascotas;
+
 
 /**
  *
@@ -18,6 +15,7 @@ public class Mascota {
         this.nombre = unNombre;
         this.energia = unEnergia;
         this.energiaIdeal = unaEnergiaIdeal;
+
     }
 
     public String getNombre() {
@@ -43,6 +41,7 @@ public class Mascota {
     public void setEnergiaIdeal(float energiaIdeal) {
         this.energiaIdeal = energiaIdeal;
     }
+
     
     public void come(){
         this.energia=this.energia+2;
@@ -51,12 +50,11 @@ public class Mascota {
         this.energia=this.energia-1;
     }
     
-    public boolean estaGordo(){
-        boolean estaMascotaEstaGorda;
-        estaMascotaEstaGorda = this.energia > this.energiaIdeal*1.3;
-        return estaMascotaEstaGorda;
+     
+    
+    public boolean estagordo( ){
+        if (this.energia > this.energiaIdeal*1.3);
+        return true;
     }
-    
-    
-    
+
 }
