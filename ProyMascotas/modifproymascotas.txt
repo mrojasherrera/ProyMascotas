@@ -1,0 +1,5 @@
+public static void main(String[] args) {
+        // TODO code application logic here
+       Ave unAve = new Ave("pepita",5,5);
+       DAOJsonA unDao = new DAOJsonA(unAve);
+       }
