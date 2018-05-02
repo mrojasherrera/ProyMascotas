@@ -13,9 +13,9 @@ import org.json.simple.JSONObject;
  *
  * @author Nina
  */
-public class DAOJson {
+public class DAOJsonA {
  
-public DAOJson(Mascota unaMascota) {
+public DAOJsonA(Mascota unaMascota) {
     
 JSONObject obj = new JSONObject();
 String nombre = unaMascota.getNombre();
