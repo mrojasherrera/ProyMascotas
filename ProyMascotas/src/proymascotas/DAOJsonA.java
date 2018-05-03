@@ -6,7 +6,9 @@
 package proymascotas;
 import java.io.FileWriter;
 import java.io.IOException;
-import org.json.simple.JSONObject;
+import org.json.JSONException;
+import org.json.JSONObject;
+
  
 
 /**
@@ -15,13 +17,13 @@ import org.json.simple.JSONObject;
  */
 public class DAOJsonA {
  
-public DAOJsonA(Mascota unaMascota) {
+public DAOJsonA(Mascota unaMascota) throws JSONException {
     
 JSONObject obj = new JSONObject();
 String nombre = unaMascota.getNombre();
 float energia = unaMascota.getEnergia();
 float energiaIdeal = unaMascota.getEnergiaIdeal();
-obj.put ("nombre", nombre);
+obj.put("nombre", nombre);
 obj.put ("energia", energia);
 obj.put ("energiaIdeal", energiaIdeal);
 
